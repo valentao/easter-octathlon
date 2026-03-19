@@ -17,7 +17,7 @@ public class EasterOctathlonDbContextFactory : IDesignTimeDbContextFactory<Easte
         EasterOctathlonEfCoreEntityExtensionMappings.Configure();
 
         var builder = new DbContextOptionsBuilder<EasterOctathlonDbContext>()
-            .UseSqlite(configuration.GetConnectionString("Default"));
+            .UseNpgsql(configuration.GetConnectionString("Default"));
         
         return new EasterOctathlonDbContext(builder.Options);
     }
