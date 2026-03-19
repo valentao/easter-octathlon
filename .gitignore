@@ -19,6 +19,8 @@ x64/
 x86/
 bld/
 [Bb]in/
+# Directories with Windows-style backslash paths created by ABP CLI on Linux
+bin\Debug/
 [Oo]bj/
 [Ll]og/
 
