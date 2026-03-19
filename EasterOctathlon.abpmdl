@@ -1,0 +1,88 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.BasicTheme": {
+      "version": "10.1.0",
+      "isInstalled": true,
+      "creationTime": "03/19/2026 14:45:47 +00:00"
+    },
+    "Volo.Abp.Account": {
+      "version": "10.1.0",
+      "isInstalled": true,
+      "creationTime": "03/19/2026 14:45:47 +00:00"
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "10.1.0",
+      "isInstalled": true,
+      "creationTime": "03/19/2026 14:45:47 +00:00"
+    },
+    "Volo.Abp.Identity": {
+      "version": "10.1.0",
+      "isInstalled": true,
+      "creationTime": "03/19/2026 14:45:47 +00:00"
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "10.1.0",
+      "isInstalled": true,
+      "creationTime": "03/19/2026 14:45:47 +00:00"
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "10.1.0",
+      "isInstalled": true,
+      "creationTime": "03/19/2026 14:45:47 +00:00"
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "10.1.0",
+      "isInstalled": true,
+      "creationTime": "03/19/2026 14:45:47 +00:00"
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "10.1.0",
+      "isInstalled": true,
+      "creationTime": "03/19/2026 14:45:47 +00:00"
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {}
+    }
+  },
+  "packages": {
+    "EasterOctathlon.Application": {
+      "path": "src/EasterOctathlon.Application/EasterOctathlon.Application.abppkg",
+      "folder": "src"
+    },
+    "EasterOctathlon.Domain.Shared": {
+      "path": "src/EasterOctathlon.Domain.Shared/EasterOctathlon.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "EasterOctathlon.Application.Contracts": {
+      "path": "src/EasterOctathlon.Application.Contracts/EasterOctathlon.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "EasterOctathlon.HttpApi": {
+      "path": "src/EasterOctathlon.HttpApi/EasterOctathlon.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "EasterOctathlon.HttpApi.Client": {
+      "path": "src/EasterOctathlon.HttpApi.Client/EasterOctathlon.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "EasterOctathlon.Web": {
+      "path": "src/EasterOctathlon.Web/EasterOctathlon.Web.abppkg",
+      "folder": "src"
+    },
+    "EasterOctathlon.EntityFrameworkCore": {
+      "path": "src/EasterOctathlon.EntityFrameworkCore/EasterOctathlon.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "EasterOctathlon.DbMigrator": {
+      "path": "src/EasterOctathlon.DbMigrator/EasterOctathlon.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "EasterOctathlon.Domain": {
+      "path": "src/EasterOctathlon.Domain/EasterOctathlon.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}

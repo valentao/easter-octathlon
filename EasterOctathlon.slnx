@@ -1,0 +1,16 @@
+<Solution>
+    <Configurations>
+        <Platform Name="Any CPU" />
+    </Configurations>
+    <Folder Name="/src/">
+        <Project Path="src/EasterOctathlon.Domain/EasterOctathlon.Domain.csproj" />
+        <Project Path="src/EasterOctathlon.Application/EasterOctathlon.Application.csproj" />
+        <Project Path="src/EasterOctathlon.EntityFrameworkCore/EasterOctathlon.EntityFrameworkCore.csproj" />
+        <Project Path="src/EasterOctathlon.Web/EasterOctathlon.Web.csproj" />
+        <Project Path="src/EasterOctathlon.Domain.Shared/EasterOctathlon.Domain.Shared.csproj" />
+        <Project Path="src/EasterOctathlon.Application.Contracts/EasterOctathlon.Application.Contracts.csproj" />
+        <Project Path="src/EasterOctathlon.HttpApi/EasterOctathlon.HttpApi.csproj" />
+        <Project Path="src/EasterOctathlon.HttpApi.Client/EasterOctathlon.HttpApi.Client.csproj" />
+        <Project Path="src/EasterOctathlon.DbMigrator/EasterOctathlon.DbMigrator.csproj" />
+    </Folder>
+</Solution>
