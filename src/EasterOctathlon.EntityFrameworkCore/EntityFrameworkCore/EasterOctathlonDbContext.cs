@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using EasterOctathlon.EntityFrameworkCore.Participants;
+using EasterOctathlon.Participants;
 using Volo.Abp.AuditLogging.EntityFrameworkCore;
 using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
 using Volo.Abp.BlobStoring.Database.EntityFrameworkCore;
@@ -25,7 +27,7 @@ public class EasterOctathlonDbContext :
     ITenantManagementDbContext,
     IIdentityDbContext
 {
-    /* Add DbSet properties for your Aggregate Roots / Entities here. */
+    public DbSet<Participant> Participants { get; set; }
 
 
     #region Entities from the modules
@@ -80,12 +82,6 @@ public class EasterOctathlonDbContext :
         builder.ConfigureBlobStoring();
         
         /* Configure your own tables/entities inside here */
-
-        //builder.Entity<YourEntity>(b =>
-        //{
-        //    b.ToTable(EasterOctathlonConsts.DbTablePrefix + "YourEntities", EasterOctathlonConsts.DbSchema);
-        //    b.ConfigureByConvention(); //auto configure for the base class props
-        //    //...
-        //});
+        builder.ApplyConfiguration(new ParticipantConfiguration());
     }
 }

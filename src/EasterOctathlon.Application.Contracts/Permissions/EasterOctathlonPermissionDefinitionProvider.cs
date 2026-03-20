@@ -10,9 +10,21 @@ public class EasterOctathlonPermissionDefinitionProvider : PermissionDefinitionP
     public override void Define(IPermissionDefinitionContext context)
     {
         var myGroup = context.AddGroup(EasterOctathlonPermissions.GroupName);
+        var participantsPermission = myGroup.AddPermission(
+            EasterOctathlonPermissions.Participants.Default,
+            L("Permission:Participants"));
 
-        //Define your own permissions here. Example:
-        //myGroup.AddPermission(EasterOctathlonPermissions.MyPermission1, L("Permission:MyPermission1"));
+        participantsPermission.AddChild(
+            EasterOctathlonPermissions.Participants.Create,
+            L("Permission:Participants.Create"));
+
+        participantsPermission.AddChild(
+            EasterOctathlonPermissions.Participants.Edit,
+            L("Permission:Participants.Edit"));
+
+        participantsPermission.AddChild(
+            EasterOctathlonPermissions.Participants.Delete,
+            L("Permission:Participants.Delete"));
     }
 
     private static LocalizableString L(string name)
