@@ -3,6 +3,7 @@ using System;
 using EasterOctathlon.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Volo.Abp.EntityFrameworkCore;
@@ -12,9 +13,11 @@ using Volo.Abp.EntityFrameworkCore;
 namespace EasterOctathlon.Migrations
 {
     [DbContext(typeof(EasterOctathlonDbContext))]
-    partial class EasterOctathlonDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260320092250_Added_Participant")]
+    partial class Added_Participant
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

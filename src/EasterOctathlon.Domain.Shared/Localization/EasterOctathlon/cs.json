@@ -4,6 +4,10 @@
     "AppName": "EasterOctathlon",
     "Menu:Home": "Home",
     "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information visit",
-    "Welcome": "Welcome"
+    "Welcome": "Welcome",
+    "Permission:Participants": "Účastníci",
+    "Permission:Participants.Create": "Vytvářet účastníky",
+    "Permission:Participants.Edit": "Upravovat účastníky",
+    "Permission:Participants.Delete": "Mazat účastníky"
   }
 }
