@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Scriban" />
     <PackageReference Include="Volo.Abp.Emailing" />
     <PackageReference Include="Volo.Abp.Caching" />
     <PackageReference Include="Volo.Abp.PermissionManagement.Domain.Identity" />
